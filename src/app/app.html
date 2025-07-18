@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row">
+    <nav *ngIf="router.url !== '/login'" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/transactions">Transactions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/reports">Reports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/settings">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main [ngClass]="router.url === '/login' ? 'col-md-12 ms-sm-auto col-lg-12 px-md-4' : 'col-md-9 ms-sm-auto col-lg-10 px-md-4'">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

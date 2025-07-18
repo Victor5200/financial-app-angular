@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123456",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkFkbWluIFVzZXIiLCJpYXQiOjE1MTYyMzkwMjJ9.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+    }
+  ],
+  "transactions": [
+    { "id": 1, "date": "2023-10-01", "description": "Salary", "amount": 5000, "type": "Income" },
+    { "id": 2, "date": "2023-10-05", "description": "Groceries", "amount": -150, "type": "Expense" },
+    { "id": 3, "date": "2023-10-10", "description": "Electricity Bill", "amount": -100, "type": "Expense" },
+    { "id": 4, "date": "2023-10-15", "description": "Freelance Work", "amount": 1200, "type": "Income" }
+  ]
+}
